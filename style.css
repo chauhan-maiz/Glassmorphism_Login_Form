@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(bg-img.jpg);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.container {
+    background: rgb(0, 0, 0, 0.01);
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 30px 20px rgb(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 14px;
+}
+
+.input {
+    display: flex;
+    width: 100%;
+    /* position: relative; */
+    margin-top: 20px;
+    /* margin-left: 85px; */
+}
+
+.input input {
+    width: 100%;
+    padding: 10px 17px 10px 38px;
+    border-radius: 80px;
+    border: 2px solid transparent;
+    background: rgb(255, 255, 255, 0.1);
+    outline: none;
+    color: white;
+    caret-color: white;
+    font-weight: 500;
+    transition: 0.25s;
+
+}
+
+.input input:focus {
+    border: 2px solid rgb(255, 255, 255, 0.25);
+}
+
+.input input::placeholder {
+    color: rgb(255, 255, 255, 0.80);
+}
+
+.input i {
+    position: relative;
+    /* top: 50%; */
+    right: 217px;
+    top: 33px;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 17px;
+    transition: 0.25s;
+}
+
+.input input:focus+i {
+    color: white;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.remember-forgot h5 {
+    font-weight: normal;
+}
+
+.remember-me {
+    display: flex;
+    gap: 8px;
+}
+
+.forgot {
+    text-decoration: none;
+    color: white;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px 0;
+    background: #537D5D;
+    border: none;
+    border-radius: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 2px solid transparent;
+    transition: 0.1s;
+}
+
+.register {
+    font-weight: normal;
+    margin-top: 12px;
+}
+
+.register a {
+    color: white;
+    text-decoration: none;
+    margin-left: 3px;
+    font-weight: 500;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
